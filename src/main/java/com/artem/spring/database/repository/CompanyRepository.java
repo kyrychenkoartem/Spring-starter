@@ -1,16 +1,33 @@
 package com.artem.spring.database.repository;
 
+import com.artem.spring.bpp.Auditing;
+import com.artem.spring.bpp.InjectBean;
+import com.artem.spring.bpp.Transaction;
+import com.artem.spring.database.entity.Company;
 import com.artem.spring.database.pool.ConnectionPool;
 
-public class CompanyRepository {
+import javax.annotation.PostConstruct;
+import java.util.Optional;
 
-    private final ConnectionPool connectionPool;
+@Transaction
+@Auditing
+public class CompanyRepository implements CrudRepository<Integer, Company>{
 
-    public CompanyRepository(ConnectionPool connectionPool) {
-        this.connectionPool = connectionPool;
+    @InjectBean
+    private ConnectionPool connectionPool;
+
+    @PostConstruct
+    private void init(){
+        System.out.println("init company repository");
+    }
+    @Override
+    public Optional<Company> findById(Integer id) {
+        System.out.println("findById method..");
+        return Optional.of(new Company(id));
     }
 
-    public static CompanyRepository of(ConnectionPool connectionPool) {
-        return new CompanyRepository(connectionPool);
+    @Override
+    public void delete(Company entity) {
+        System.out.println("delete method...");
     }
 }
