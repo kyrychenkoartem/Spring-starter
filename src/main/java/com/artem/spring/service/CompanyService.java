@@ -20,7 +20,7 @@ public class CompanyService {
     private final ApplicationEventPublisher eventPublisher;
 
 
-    public Optional<CompanyReadDto> fingById(Integer id) {
+    public Optional<CompanyReadDto> findById(Integer id) {
       return companyCrudRepository.findById(id)
                 .map(entity -> {
                     eventPublisher.publishEvent(new EntityEvent(entity, AccessType.READ));

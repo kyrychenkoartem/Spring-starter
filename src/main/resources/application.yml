@@ -18,10 +18,10 @@ db:
       timeout: 2
     - size: 3
       timeout: 3
-#spring.profiles.active=qa
+spring.profiles.active: qa
 logging:
   level:
-    root: warn
+    root: info
     com.artem.spring.database.pool.ConnectionPool: info
   file:
     name: artem.log
