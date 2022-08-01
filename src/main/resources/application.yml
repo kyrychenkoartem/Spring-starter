@@ -19,10 +19,23 @@ db:
     - size: 3
       timeout: 3
 spring.profiles.active: qa
+
 logging:
   level:
     root: info
-    com.artem.spring.database.pool.ConnectionPool: info
   file:
     name: artem.log
     path: /
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/postgres
+    username: postgres
+    password: pass
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        hbm2ddl.auto: validate
