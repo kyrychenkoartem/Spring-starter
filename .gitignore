@@ -1,50 +1,76 @@
-user.gradle
-.gradle/
-target/
-build/
-out/
+.gradle
+/build/
 
-*.DS_Store
+gradle-app.setting
+
+
+!gradle-wrapper.jar
+
+
+.gradletasknamecache
 *.class
-*.swp
-*~
-
-.idea/
-*.iml
-*.ipr
-*.iws
-.shelf
-
-.settings/
-.classpath
-.project
-bin/
-
-*.log
-
-*.ctxt
 
 .mtj.tmp/
 
 *.jar
 *.war
-*.nar
 *.ear
-*.zip
-*.tar.gz
-*.rar
 
 hs_err_pid*
-replay_pid*
 
-.gradle
-**/build/
-!src/**/build/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
 
-gradle-app.setting
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
 
-!gradle-wrapper.jar
+.idea/gradle.xml
+.idea/libraries
 
-!gradle-wrapper.properties
+.idea/mongoSettings.xml
 
-.gradletasknamecache
+*.iws
+
+
+/out/
+
+.idea_modules/
+
+atlassian-ide-plugin.xml
+
+
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+Icon
+
+
+._*
+
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
