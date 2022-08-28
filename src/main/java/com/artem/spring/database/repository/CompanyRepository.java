@@ -1,49 +1,24 @@
 package com.artem.spring.database.repository;
 
-import com.artem.spring.bpp.Auditing;
-import com.artem.spring.bpp.Transaction;
+;
 import com.artem.spring.database.entity.Company;
-import com.artem.spring.database.pool.ConnectionPool;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.beans.factory.config.BeanDefinition;
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
-import javax.annotation.PostConstruct;
-import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-@Slf4j
-@Repository
-@Scope(BeanDefinition.SCOPE_PROTOTYPE)
-@Transaction
-@Auditing
-@RequiredArgsConstructor
-public class CompanyRepository implements CrudRepository<Integer, Company>{
 
-    private final ConnectionPool pool1;
+public interface CompanyRepository extends JpaRepository<Company, Integer> {
 
-    private final List<ConnectionPool> pools;
-    @Value("${db.pool.size}")
-    private final Integer poolSize;
+    //Optional, Entity, Future
+//    @Query(name = "Company.findByName")
+    @Query("select c from Company c " +
+            "join fetch c.locales cl " +
+            "where c.name = :name2")
+    Optional<Company> findByName(@Param("name2") String name);
 
-    @PostConstruct
-    private void init(){
-        log.info("init company repository");
-    }
-
-    @Override
-    public Optional<Company> findById(Integer id) {
-        log.info("findById method..");
-        return Optional.of(new Company(id, null, Collections.emptyMap()));
-    }
-
-    @Override
-    public void delete(Company entity) {
-        log.info("delete method...");
-    }
-
+    //Collection, Stream(batch, close)
+    List<Company> findAllByNameContainingIgnoreCase(String fragment);
 }
