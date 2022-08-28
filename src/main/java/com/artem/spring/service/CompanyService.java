@@ -1,7 +1,6 @@
 package com.artem.spring.service;
 
-import com.artem.spring.database.entity.Company;
-import com.artem.spring.database.repository.CrudRepository;
+import com.artem.spring.database.repository.CompanyRepository;
 import com.artem.spring.dto.CompanyReadDto;
 import com.artem.spring.listener.entity.AccessType;
 import com.artem.spring.listener.entity.EntityEvent;
@@ -16,7 +15,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class CompanyService {
 
-    private final CrudRepository<Integer, Company> companyCrudRepository;
+    private final CompanyRepository companyCrudRepository;
     private final UserService userService;
     private final ApplicationEventPublisher eventPublisher;
 

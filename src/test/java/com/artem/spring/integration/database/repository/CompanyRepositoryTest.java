@@ -1,6 +1,7 @@
 package com.artem.spring.integration.database.repository;
 
 import com.artem.spring.database.entity.Company;
+import com.artem.spring.database.repository.CompanyRepository;
 import com.artem.spring.integration.annotation.IT;
 import lombok.RequiredArgsConstructor;
 import org.junit.jupiter.api.Test;
@@ -16,9 +17,27 @@ import static org.junit.jupiter.api.Assertions.*;
 @RequiredArgsConstructor
 class CompanyRepositoryTest {
 
+    private static final Integer APPLE_ID = 5;
     private final EntityManager entityManager;
 
     private final TransactionTemplate transactionTemplate;
+
+    private final CompanyRepository companyRepository;
+
+    @Test
+    void checkFindByQueries() {
+        companyRepository.findByName("google");
+        companyRepository.findAllByNameContainingIgnoreCase("a");
+    }
+
+    @Test
+    void delete() {
+        var expected = companyRepository.findById(APPLE_ID);
+        assertTrue(expected.isPresent());
+        expected.ifPresent(companyRepository::delete);
+        entityManager.flush();
+        assertTrue(companyRepository.findById(APPLE_ID).isEmpty());
+    }
 
     @Test
     void findById() {
