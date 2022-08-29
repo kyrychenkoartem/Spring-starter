@@ -23,6 +23,10 @@ spring.profiles.active: qa
 logging:
   level:
     root: info
+    org:
+      springframework:
+        jdbc:
+          core: TRACE
   file:
     name: artem.log
     path: /
@@ -37,5 +41,7 @@ spring:
     properties:
       hibernate:
         show_sql: true
+        batch_size: 50
+        fetch_size: 50
         format_sql: true
         hbm2ddl.auto: validate

@@ -2,11 +2,9 @@ package com.artem.spring.database.repository;
 
 import com.artem.spring.database.entity.Role;
 import com.artem.spring.database.entity.User;
-import com.artem.spring.dto.PersonalInfo;
 import com.artem.spring.dto.PersonalInfo2;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Slice;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.*;
 import org.springframework.data.querydsl.QuerydslPredicateExecutor;
