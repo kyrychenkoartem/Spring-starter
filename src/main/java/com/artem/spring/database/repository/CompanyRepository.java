@@ -1,6 +1,5 @@
 package com.artem.spring.database.repository;
 
-;
 import com.artem.spring.database.entity.Company;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
