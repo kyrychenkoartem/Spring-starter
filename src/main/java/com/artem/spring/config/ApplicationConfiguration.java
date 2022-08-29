@@ -1,7 +1,6 @@
 package com.artem.spring.config;
 
 import com.artem.spring.database.pool.ConnectionPool;
-import com.artem.spring.database.repository.UserRepository;
 import com.artem.web.config.WebConfiguration;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.*;
