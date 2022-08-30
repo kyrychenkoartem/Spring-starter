@@ -5,7 +5,7 @@ import com.artem.spring.database.entity.Role;
 import com.artem.spring.database.entity.User;
 import com.artem.spring.database.repository.UserRepository;
 import com.artem.spring.dto.UserFilter;
-import com.artem.spring.integration.annotation.IT;
+import com.artem.spring.integration.IntegrationTestBase;
 import lombok.RequiredArgsConstructor;
 import org.junit.jupiter.api.Test;
 import org.springframework.data.domain.PageRequest;
@@ -19,9 +19,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
 
-@IT
+
 @RequiredArgsConstructor
-class UserRepositoryTest {
+class UserRepositoryTest extends IntegrationTestBase {
 
     private final UserRepository userRepository;
 
@@ -39,7 +39,6 @@ class UserRepositoryTest {
     }
 
     @Test
-    @Commit
     void checkAuditing() {
         var ivan = userRepository.findById(1L).get();
         ivan.setBirthDate(ivan.getBirthDate().plusYears(1));
