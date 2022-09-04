@@ -16,7 +16,6 @@ import java.util.Optional;
 public class CompanyService {
 
     private final CompanyRepository companyCrudRepository;
-    private final UserService userService;
     private final ApplicationEventPublisher eventPublisher;
 
     @Transactional
@@ -24,7 +23,7 @@ public class CompanyService {
       return companyCrudRepository.findById(id)
                 .map(entity -> {
                     eventPublisher.publishEvent(new EntityEvent(entity, AccessType.READ));
-                    return new CompanyReadDto(entity.getId());
+                    return new CompanyReadDto(entity.getId(), null);
                 });
     }
 
