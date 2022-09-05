@@ -5,6 +5,7 @@ import com.artem.spring.database.entity.User;
 import com.artem.spring.database.querydsl.QPredicates;
 import com.artem.spring.dto.PersonalInfo;
 import com.artem.spring.dto.UserFilter;
+import com.querydsl.core.types.Predicate;
 import com.querydsl.jpa.impl.JPAQuery;
 import lombok.RequiredArgsConstructor;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -16,6 +17,7 @@ import java.util.List;
 import java.util.Map;
 
 import static com.artem.spring.database.entity.QUser.user;
+
 
 @RequiredArgsConstructor
 public class FilterUserRepositoryImpl implements FilterUserRepository {
@@ -51,7 +53,7 @@ public class FilterUserRepositoryImpl implements FilterUserRepository {
 
     @Override
     public List<User> findAllByFilter(UserFilter userFilter) {
-        var predicate = QPredicates.builder()
+        Predicate predicate = QPredicates.builder()
                 .add(userFilter.firstname(), user.firstname::containsIgnoreCase)
                 .add(userFilter.lastname(), user.lastname::containsIgnoreCase)
                 .add(userFilter.birthDate(), user.birthDate::before)
