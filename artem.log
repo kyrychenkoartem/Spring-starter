@@ -614,3 +614,583 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2022-09-05 01:29:50.592  INFO 115904 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-09-05 01:29:50.593  INFO 115904 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-09-05 01:29:50.597  INFO 115904 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-05 15:43:10.463  INFO 92132 --- [main] com.artem.spring.ApplicationRunner       : Starting ApplicationRunner using Java 17.0.3 on LAPTOP-FTAQH9L7 with PID 92132 (D:\IT\Projects\Spring-starter\build\classes\java\main started by killa in D:\IT\Projects\Spring-starter)
+2022-09-05 15:43:10.466  INFO 92132 --- [main] com.artem.spring.ApplicationRunner       : The following 1 profile is active: "qa"
+2022-09-05 15:43:11.088  INFO 92132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-05 15:43:11.164  INFO 92132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
+2022-09-05 15:43:11.958  INFO 92132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-05 15:43:11.969  INFO 92132 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-05 15:43:11.969  INFO 92132 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-09-05 15:43:12.178  INFO 92132 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-09-05 15:43:12.189  INFO 92132 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-05 15:43:12.189  INFO 92132 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1676 ms
+2022-09-05 15:43:12.351  INFO 92132 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-05 15:43:12.478  INFO 92132 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-05 15:43:12.593  INFO 92132 --- [main] liquibase.database                       : Set default schema name to public
+2022-09-05 15:43:12.690  INFO 92132 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2022-09-05 15:43:12.814  INFO 92132 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2022-09-05 15:43:12.868  INFO 92132 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2022-09-05 15:43:12.923  INFO 92132 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-05 15:43:12.973  INFO 92132 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-09-05 15:43:13.119  INFO 92132 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-05 15:43:13.224  INFO 92132 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-09-05 15:43:13.248  INFO 92132 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2022-09-05 15:43:14.518  INFO 92132 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-05 15:43:14.635  INFO 92132 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-05 15:43:14.646  INFO 92132 --- [main] c.artem.spring.config.JpaConfiguration   : Jpa Configuration is enabled
+2022-09-05 15:43:14.654  INFO 92132 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 15:43:15.161  INFO 92132 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 15:43:15.162  INFO 92132 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 15:43:15.511  INFO 92132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-05 15:43:15.520  INFO 92132 --- [main] com.artem.spring.ApplicationRunner       : Started ApplicationRunner in 5.497 seconds (JVM running for 6.194)
+2022-09-05 15:43:25.998  INFO 92132 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-05 15:43:25.999  INFO 92132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-05 15:43:25.999  INFO 92132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-09-05 15:44:20.476  WARN 92132 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<EOL>Field error in object 'userCreateEditDto' on field 'username': rejected value [kate]; codes [Email.userCreateEditDto.username,Email.username,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userCreateEditDto.username,username]; arguments []; default message [username],[Ljavax.validation.constraints.Pattern$Flag;@6d8c2a1b,.*]; default message [должно иметь формат адреса электронной почты]]
+2022-09-05 15:52:29.299  INFO 92132 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 15:52:29.300  INFO 92132 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 15:52:29.300  INFO 92132 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 15:52:29.300  INFO 92132 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-05 15:52:29.302  INFO 92132 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-05 15:52:29.305  INFO 92132 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-05 15:52:34.242  INFO 109016 --- [main] com.artem.spring.ApplicationRunner       : Starting ApplicationRunner using Java 17.0.3 on LAPTOP-FTAQH9L7 with PID 109016 (D:\IT\Projects\Spring-starter\build\classes\java\main started by killa in D:\IT\Projects\Spring-starter)
+2022-09-05 15:52:34.245  INFO 109016 --- [main] com.artem.spring.ApplicationRunner       : The following 1 profile is active: "qa"
+2022-09-05 15:52:34.906  INFO 109016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-05 15:52:34.976  INFO 109016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 2 JPA repository interfaces.
+2022-09-05 15:52:35.609  INFO 109016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-05 15:52:35.617  INFO 109016 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-05 15:52:35.617  INFO 109016 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-09-05 15:52:35.826  INFO 109016 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-09-05 15:52:35.836  INFO 109016 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-05 15:52:35.837  INFO 109016 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1513 ms
+2022-09-05 15:52:35.967  INFO 109016 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-05 15:52:36.058  INFO 109016 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-05 15:52:36.143  INFO 109016 --- [main] liquibase.database                       : Set default schema name to public
+2022-09-05 15:52:36.222  INFO 109016 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2022-09-05 15:52:36.303  INFO 109016 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2022-09-05 15:52:36.360  INFO 109016 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2022-09-05 15:52:36.403  INFO 109016 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-05 15:52:36.433  INFO 109016 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-09-05 15:52:36.510  INFO 109016 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-05 15:52:36.574  INFO 109016 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-09-05 15:52:36.594  INFO 109016 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2022-09-05 15:52:37.369  INFO 109016 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-05 15:52:37.415  INFO 109016 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-05 15:52:37.420  INFO 109016 --- [main] c.artem.spring.config.JpaConfiguration   : Jpa Configuration is enabled
+2022-09-05 15:52:37.424  INFO 109016 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 15:52:37.823  INFO 109016 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 15:52:37.824  INFO 109016 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 15:52:38.141  INFO 109016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-05 15:52:38.149  INFO 109016 --- [main] com.artem.spring.ApplicationRunner       : Started ApplicationRunner in 4.441 seconds (JVM running for 5.011)
+2022-09-05 15:52:52.615  INFO 109016 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-05 15:52:52.615  INFO 109016 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-05 15:52:52.616  INFO 109016 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-09-05 15:56:29.351  INFO 109016 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 15:56:29.351  INFO 109016 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 15:56:29.352  INFO 109016 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 15:56:29.352  INFO 109016 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-05 15:56:29.353  INFO 109016 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-05 15:56:29.359  INFO 109016 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-05 15:56:33.765  INFO 36888 --- [main] com.artem.spring.ApplicationRunner       : Starting ApplicationRunner using Java 17.0.3 on LAPTOP-FTAQH9L7 with PID 36888 (D:\IT\Projects\Spring-starter\build\classes\java\main started by killa in D:\IT\Projects\Spring-starter)
+2022-09-05 15:56:33.768  INFO 36888 --- [main] com.artem.spring.ApplicationRunner       : The following 1 profile is active: "qa"
+2022-09-05 15:56:34.263  INFO 36888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-05 15:56:34.336  INFO 36888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 2 JPA repository interfaces.
+2022-09-05 15:56:34.957  INFO 36888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-05 15:56:34.965  INFO 36888 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-05 15:56:34.965  INFO 36888 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-09-05 15:56:35.139  INFO 36888 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-09-05 15:56:35.146  INFO 36888 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-05 15:56:35.147  INFO 36888 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1337 ms
+2022-09-05 15:56:35.255  INFO 36888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-05 15:56:35.338  INFO 36888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-05 15:56:35.423  INFO 36888 --- [main] liquibase.database                       : Set default schema name to public
+2022-09-05 15:56:35.513  INFO 36888 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2022-09-05 15:56:35.590  INFO 36888 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2022-09-05 15:56:35.636  INFO 36888 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2022-09-05 15:56:35.677  INFO 36888 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-05 15:56:35.707  INFO 36888 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-09-05 15:56:35.788  INFO 36888 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-05 15:56:35.843  INFO 36888 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-09-05 15:56:35.864  INFO 36888 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2022-09-05 15:56:36.587  INFO 36888 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-05 15:56:36.634  INFO 36888 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-05 15:56:36.639  INFO 36888 --- [main] c.artem.spring.config.JpaConfiguration   : Jpa Configuration is enabled
+2022-09-05 15:56:36.642  INFO 36888 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 15:56:37.061  INFO 36888 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 15:56:37.062  INFO 36888 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 15:56:37.341  INFO 36888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-05 15:56:37.349  INFO 36888 --- [main] com.artem.spring.ApplicationRunner       : Started ApplicationRunner in 4.003 seconds (JVM running for 4.561)
+2022-09-05 15:56:44.295  INFO 36888 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-05 15:56:44.295  INFO 36888 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-05 15:56:44.296  INFO 36888 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-09-05 16:00:35.480  INFO 36888 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 16:00:35.480  INFO 36888 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 16:00:35.481  INFO 36888 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 16:00:35.481  INFO 36888 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-05 16:00:35.482  INFO 36888 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-05 16:00:35.486  INFO 36888 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-05 16:00:39.639  INFO 86792 --- [main] com.artem.spring.ApplicationRunner       : Starting ApplicationRunner using Java 17.0.3 on LAPTOP-FTAQH9L7 with PID 86792 (D:\IT\Projects\Spring-starter\build\classes\java\main started by killa in D:\IT\Projects\Spring-starter)
+2022-09-05 16:00:39.641  INFO 86792 --- [main] com.artem.spring.ApplicationRunner       : The following 1 profile is active: "qa"
+2022-09-05 16:00:40.119  INFO 86792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-05 16:00:40.180  INFO 86792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2022-09-05 16:00:40.764  INFO 86792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-05 16:00:40.771  INFO 86792 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-05 16:00:40.772  INFO 86792 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-09-05 16:00:40.946  INFO 86792 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-09-05 16:00:40.952  INFO 86792 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-05 16:00:40.952  INFO 86792 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1268 ms
+2022-09-05 16:00:41.058  INFO 86792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-05 16:00:41.145  INFO 86792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-05 16:00:41.228  INFO 86792 --- [main] liquibase.database                       : Set default schema name to public
+2022-09-05 16:00:41.307  INFO 86792 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2022-09-05 16:00:41.382  INFO 86792 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2022-09-05 16:00:41.429  INFO 86792 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2022-09-05 16:00:41.470  INFO 86792 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-05 16:00:41.504  INFO 86792 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-09-05 16:00:41.589  INFO 86792 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-05 16:00:41.646  INFO 86792 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-09-05 16:00:41.667  INFO 86792 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2022-09-05 16:00:42.392  INFO 86792 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-05 16:00:42.440  INFO 86792 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-05 16:00:42.445  INFO 86792 --- [main] c.artem.spring.config.JpaConfiguration   : Jpa Configuration is enabled
+2022-09-05 16:00:42.448  INFO 86792 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 16:00:42.839  INFO 86792 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 16:00:42.840  INFO 86792 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 16:00:43.155  INFO 86792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-05 16:00:43.162  INFO 86792 --- [main] com.artem.spring.ApplicationRunner       : Started ApplicationRunner in 3.933 seconds (JVM running for 4.562)
+2022-09-05 16:00:54.041  INFO 86792 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-05 16:00:54.041  INFO 86792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-05 16:00:54.042  INFO 86792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-09-05 16:01:44.068  INFO 86792 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 16:01:44.068  INFO 86792 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 16:01:44.069  INFO 86792 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 16:01:44.069  INFO 86792 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-05 16:01:44.070  INFO 86792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-05 16:01:44.076  INFO 86792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-05 16:01:48.164  INFO 101416 --- [main] com.artem.spring.ApplicationRunner       : Starting ApplicationRunner using Java 17.0.3 on LAPTOP-FTAQH9L7 with PID 101416 (D:\IT\Projects\Spring-starter\build\classes\java\main started by killa in D:\IT\Projects\Spring-starter)
+2022-09-05 16:01:48.168  INFO 101416 --- [main] com.artem.spring.ApplicationRunner       : The following 1 profile is active: "qa"
+2022-09-05 16:01:48.630  INFO 101416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-05 16:01:48.691  INFO 101416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+2022-09-05 16:01:49.278  INFO 101416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-05 16:01:49.283  INFO 101416 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-05 16:01:49.283  INFO 101416 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-09-05 16:01:49.438  INFO 101416 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-09-05 16:01:49.446  INFO 101416 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-05 16:01:49.446  INFO 101416 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1233 ms
+2022-09-05 16:01:49.551  INFO 101416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-05 16:01:49.635  INFO 101416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-05 16:01:49.712  INFO 101416 --- [main] liquibase.database                       : Set default schema name to public
+2022-09-05 16:01:49.784  INFO 101416 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2022-09-05 16:01:49.866  INFO 101416 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2022-09-05 16:01:49.913  INFO 101416 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2022-09-05 16:01:49.956  INFO 101416 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-05 16:01:49.986  INFO 101416 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-09-05 16:01:50.065  INFO 101416 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-05 16:01:50.120  INFO 101416 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-09-05 16:01:50.140  INFO 101416 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2022-09-05 16:01:50.846  INFO 101416 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-05 16:01:50.894  INFO 101416 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-05 16:01:50.898  INFO 101416 --- [main] c.artem.spring.config.JpaConfiguration   : Jpa Configuration is enabled
+2022-09-05 16:01:50.902  INFO 101416 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 16:01:51.285  INFO 101416 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 16:01:51.286  INFO 101416 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 16:01:51.563  INFO 101416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-05 16:01:51.571  INFO 101416 --- [main] com.artem.spring.ApplicationRunner       : Started ApplicationRunner in 3.812 seconds (JVM running for 4.416)
+2022-09-05 16:01:58.971  INFO 101416 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-05 16:01:58.971  INFO 101416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-05 16:01:58.971  INFO 101416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-09-05 18:21:11.772  INFO 101416 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 18:21:11.773  INFO 101416 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 18:21:11.773  INFO 101416 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 18:21:11.773  INFO 101416 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-05 18:21:11.774  INFO 101416 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-05 18:21:11.778  INFO 101416 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-05 18:21:16.358  INFO 63840 --- [main] com.artem.spring.ApplicationRunner       : Starting ApplicationRunner using Java 17.0.3 on LAPTOP-FTAQH9L7 with PID 63840 (D:\IT\Projects\Spring-starter\build\classes\java\main started by killa in D:\IT\Projects\Spring-starter)
+2022-09-05 18:21:16.360  INFO 63840 --- [main] com.artem.spring.ApplicationRunner       : The following 1 profile is active: "qa"
+2022-09-05 18:21:16.890  INFO 63840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-05 18:21:16.971  INFO 63840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 2 JPA repository interfaces.
+2022-09-05 18:21:17.604  INFO 63840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-05 18:21:17.609  INFO 63840 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-05 18:21:17.609  INFO 63840 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-09-05 18:21:17.769  INFO 63840 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-09-05 18:21:17.775  INFO 63840 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-05 18:21:17.775  INFO 63840 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1369 ms
+2022-09-05 18:21:17.883  INFO 63840 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-05 18:21:17.969  INFO 63840 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-05 18:21:18.055  INFO 63840 --- [main] liquibase.database                       : Set default schema name to public
+2022-09-05 18:21:18.154  INFO 63840 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2022-09-05 18:21:18.244  INFO 63840 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2022-09-05 18:21:18.293  INFO 63840 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2022-09-05 18:21:18.338  INFO 63840 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-05 18:21:18.369  INFO 63840 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-09-05 18:21:18.450  INFO 63840 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-05 18:21:18.509  INFO 63840 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-09-05 18:21:18.529  INFO 63840 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2022-09-05 18:21:19.266  INFO 63840 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-05 18:21:19.322  INFO 63840 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-05 18:21:19.326  INFO 63840 --- [main] c.artem.spring.config.JpaConfiguration   : Jpa Configuration is enabled
+2022-09-05 18:21:19.330  INFO 63840 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 18:21:19.726  INFO 63840 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 18:21:19.727  INFO 63840 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 18:21:20.013  INFO 63840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-05 18:21:20.022  INFO 63840 --- [main] com.artem.spring.ApplicationRunner       : Started ApplicationRunner in 4.09 seconds (JVM running for 4.647)
+2022-09-05 18:21:31.600  INFO 63840 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-05 18:21:31.601  INFO 63840 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-05 18:21:31.601  INFO 63840 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-09-05 18:29:44.868  INFO 63840 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 18:29:44.868  INFO 63840 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 18:29:44.868  INFO 63840 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 18:29:44.869  INFO 63840 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-05 18:29:44.870  INFO 63840 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-05 18:29:44.875  INFO 63840 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-05 18:29:51.014  INFO 59780 --- [main] com.artem.spring.ApplicationRunner       : Starting ApplicationRunner using Java 17.0.3 on LAPTOP-FTAQH9L7 with PID 59780 (D:\IT\Projects\Spring-starter\build\classes\java\main started by killa in D:\IT\Projects\Spring-starter)
+2022-09-05 18:29:51.018  INFO 59780 --- [main] com.artem.spring.ApplicationRunner       : The following 1 profile is active: "qa"
+2022-09-05 18:29:51.795  INFO 59780 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-05 18:29:51.882  INFO 59780 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 2 JPA repository interfaces.
+2022-09-05 18:29:52.543  INFO 59780 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-05 18:29:52.552  INFO 59780 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-05 18:29:52.552  INFO 59780 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-09-05 18:29:52.763  INFO 59780 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-09-05 18:29:52.774  INFO 59780 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-05 18:29:52.774  INFO 59780 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1699 ms
+2022-09-05 18:29:52.929  INFO 59780 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-05 18:29:53.049  INFO 59780 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-05 18:29:53.146  INFO 59780 --- [main] liquibase.database                       : Set default schema name to public
+2022-09-05 18:29:53.235  INFO 59780 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2022-09-05 18:29:53.319  INFO 59780 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2022-09-05 18:29:53.369  INFO 59780 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2022-09-05 18:29:53.409  INFO 59780 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-05 18:29:53.441  INFO 59780 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-09-05 18:29:53.525  INFO 59780 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-05 18:29:53.588  INFO 59780 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-09-05 18:29:53.609  INFO 59780 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2022-09-05 18:29:54.355  INFO 59780 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-05 18:29:54.404  INFO 59780 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-05 18:29:54.409  INFO 59780 --- [main] c.artem.spring.config.JpaConfiguration   : Jpa Configuration is enabled
+2022-09-05 18:29:54.413  INFO 59780 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 18:29:54.815  INFO 59780 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 18:29:54.815  INFO 59780 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 18:29:55.147  INFO 59780 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-05 18:29:55.155  INFO 59780 --- [main] com.artem.spring.ApplicationRunner       : Started ApplicationRunner in 4.732 seconds (JVM running for 5.255)
+2022-09-05 18:30:10.866  INFO 59780 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-05 18:30:10.866  INFO 59780 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-05 18:30:10.867  INFO 59780 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-09-05 18:30:32.527  INFO 59780 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 18:30:32.527  INFO 59780 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 18:30:32.528  INFO 59780 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 18:30:32.528  INFO 59780 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-05 18:30:32.529  INFO 59780 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-05 18:30:32.533  INFO 59780 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-05 18:30:36.432  INFO 74524 --- [main] com.artem.spring.ApplicationRunner       : Starting ApplicationRunner using Java 17.0.3 on LAPTOP-FTAQH9L7 with PID 74524 (D:\IT\Projects\Spring-starter\build\classes\java\main started by killa in D:\IT\Projects\Spring-starter)
+2022-09-05 18:30:36.435  INFO 74524 --- [main] com.artem.spring.ApplicationRunner       : The following 1 profile is active: "qa"
+2022-09-05 18:30:36.952  INFO 74524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-05 18:30:37.026  INFO 74524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+2022-09-05 18:30:37.635  INFO 74524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-05 18:30:37.644  INFO 74524 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-05 18:30:37.644  INFO 74524 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-09-05 18:30:37.825  INFO 74524 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-09-05 18:30:37.833  INFO 74524 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-05 18:30:37.834  INFO 74524 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1357 ms
+2022-09-05 18:30:37.951  INFO 74524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-05 18:30:38.039  INFO 74524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-05 18:30:38.136  INFO 74524 --- [main] liquibase.database                       : Set default schema name to public
+2022-09-05 18:30:38.223  INFO 74524 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2022-09-05 18:30:38.300  INFO 74524 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2022-09-05 18:30:38.351  INFO 74524 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2022-09-05 18:30:38.390  INFO 74524 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-05 18:30:38.421  INFO 74524 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-09-05 18:30:38.499  INFO 74524 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-05 18:30:38.555  INFO 74524 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-09-05 18:30:38.575  INFO 74524 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2022-09-05 18:30:39.322  INFO 74524 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-05 18:30:39.374  INFO 74524 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-05 18:30:39.379  INFO 74524 --- [main] c.artem.spring.config.JpaConfiguration   : Jpa Configuration is enabled
+2022-09-05 18:30:39.383  INFO 74524 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 18:30:39.786  INFO 74524 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 18:30:39.787  INFO 74524 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 18:30:40.098  INFO 74524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-05 18:30:40.106  INFO 74524 --- [main] com.artem.spring.ApplicationRunner       : Started ApplicationRunner in 4.152 seconds (JVM running for 4.678)
+2022-09-05 18:30:43.549  INFO 74524 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-05 18:30:43.549  INFO 74524 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-05 18:30:43.550  INFO 74524 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-09-05 18:33:32.870  INFO 74524 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 18:33:32.871  INFO 74524 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 18:33:32.871  INFO 74524 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 18:33:32.871  INFO 74524 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-05 18:33:32.872  INFO 74524 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-05 18:33:32.877  INFO 74524 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-05 18:38:02.444  INFO 83952 --- [main] com.artem.spring.ApplicationRunner       : Starting ApplicationRunner using Java 17.0.3 on LAPTOP-FTAQH9L7 with PID 83952 (D:\IT\Projects\Spring-starter\build\classes\java\main started by killa in D:\IT\Projects\Spring-starter)
+2022-09-05 18:38:02.447  INFO 83952 --- [main] com.artem.spring.ApplicationRunner       : The following 1 profile is active: "qa"
+2022-09-05 18:38:02.947  INFO 83952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-05 18:38:03.036  INFO 83952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 2 JPA repository interfaces.
+2022-09-05 18:38:03.742  INFO 83952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-05 18:38:03.754  INFO 83952 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-05 18:38:03.754  INFO 83952 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-09-05 18:38:03.930  INFO 83952 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-09-05 18:38:03.937  INFO 83952 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-05 18:38:03.938  INFO 83952 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1446 ms
+2022-09-05 18:38:04.066  INFO 83952 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-05 18:38:04.162  INFO 83952 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-05 18:38:04.249  INFO 83952 --- [main] liquibase.database                       : Set default schema name to public
+2022-09-05 18:38:04.332  INFO 83952 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2022-09-05 18:38:04.417  INFO 83952 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2022-09-05 18:38:04.471  INFO 83952 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2022-09-05 18:38:04.516  INFO 83952 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-05 18:38:04.552  INFO 83952 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-09-05 18:38:04.636  INFO 83952 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-05 18:38:04.692  INFO 83952 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-09-05 18:38:04.713  INFO 83952 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2022-09-05 18:38:05.464  INFO 83952 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-05 18:38:05.513  INFO 83952 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-05 18:38:05.518  INFO 83952 --- [main] c.artem.spring.config.JpaConfiguration   : Jpa Configuration is enabled
+2022-09-05 18:38:05.521  INFO 83952 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 18:38:05.926  INFO 83952 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 18:38:05.926  INFO 83952 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 18:38:06.269  INFO 83952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-05 18:38:06.279  INFO 83952 --- [main] com.artem.spring.ApplicationRunner       : Started ApplicationRunner in 4.286 seconds (JVM running for 4.945)
+2022-09-05 18:38:23.372  INFO 83952 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-05 18:38:23.373  INFO 83952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-05 18:38:23.374  INFO 83952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-09-05 18:38:39.797 ERROR 83952 --- [http-nio-8080-exec-3] c.a.s.http.controller.UserController     : Failed to return response
+
+org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'userCreateEditDto' on field 'username': rejected value [petr]; codes [Email.userCreateEditDto.username,Email.username,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userCreateEditDto.username,username]; arguments []; default message [username],[Ljavax.validation.constraints.Pattern$Flag;@3c79870,.*]; default message [Please provide correct email format]
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:175) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.64.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.64.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-09-05 18:39:15.309  INFO 83952 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 18:39:15.310  INFO 83952 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 18:39:15.310  INFO 83952 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 18:39:15.311  INFO 83952 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-05 18:39:15.312  INFO 83952 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-05 18:39:15.314  INFO 83952 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-05 18:39:18.616  INFO 101724 --- [main] com.artem.spring.ApplicationRunner       : Starting ApplicationRunner using Java 17.0.3 on LAPTOP-FTAQH9L7 with PID 101724 (D:\IT\Projects\Spring-starter\build\classes\java\main started by killa in D:\IT\Projects\Spring-starter)
+2022-09-05 18:39:18.620  INFO 101724 --- [main] com.artem.spring.ApplicationRunner       : The following 1 profile is active: "qa"
+2022-09-05 18:39:19.165  INFO 101724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-05 18:39:19.220  INFO 101724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 2 JPA repository interfaces.
+2022-09-05 18:39:19.710  INFO 101724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-05 18:39:19.716  INFO 101724 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-05 18:39:19.716  INFO 101724 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-09-05 18:39:19.872  INFO 101724 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-09-05 18:39:19.880  INFO 101724 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-05 18:39:19.880  INFO 101724 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1205 ms
+2022-09-05 18:39:20.018  INFO 101724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-05 18:39:20.113  INFO 101724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-05 18:39:20.205  INFO 101724 --- [main] liquibase.database                       : Set default schema name to public
+2022-09-05 18:39:20.287  INFO 101724 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2022-09-05 18:39:20.375  INFO 101724 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2022-09-05 18:39:20.443  INFO 101724 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2022-09-05 18:39:20.494  INFO 101724 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-05 18:39:20.531  INFO 101724 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-09-05 18:39:20.619  INFO 101724 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-05 18:39:20.715  INFO 101724 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-09-05 18:39:20.746  INFO 101724 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2022-09-05 18:39:21.684  INFO 101724 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-05 18:39:21.740  INFO 101724 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-05 18:39:21.744  INFO 101724 --- [main] c.artem.spring.config.JpaConfiguration   : Jpa Configuration is enabled
+2022-09-05 18:39:21.748  INFO 101724 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 18:39:22.251  INFO 101724 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 18:39:22.252  INFO 101724 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 18:39:22.592  INFO 101724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-05 18:39:22.602  INFO 101724 --- [main] com.artem.spring.ApplicationRunner       : Started ApplicationRunner in 4.455 seconds (JVM running for 5.818)
+2022-09-05 18:39:25.659  INFO 101724 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-05 18:39:25.660  INFO 101724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-05 18:39:25.661  INFO 101724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-09-05 18:39:30.196 ERROR 101724 --- [http-nio-8080-exec-2] c.a.s.http.controller.UserController     : Failed to return response
+
+org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'userCreateEditDto' on field 'username': rejected value [petr]; codes [Email.userCreateEditDto.username,Email.username,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userCreateEditDto.username,username]; arguments []; default message [username],[Ljavax.validation.constraints.Pattern$Flag;@5d6f9f45,.*]; default message [Please provide correct email format]
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:175) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.64.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.64.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-09-05 18:41:02.745  WARN 101724 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m42s518ms118µs200ns).
+2022-09-05 18:41:02.817  INFO 101724 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 18:41:02.818  INFO 101724 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 18:41:02.819  INFO 101724 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 18:41:02.819  INFO 101724 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-05 18:41:02.820  INFO 101724 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-05 18:41:02.826  INFO 101724 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-05 18:42:45.907  INFO 73748 --- [main] com.artem.spring.ApplicationRunner       : Starting ApplicationRunner using Java 17.0.3 on LAPTOP-FTAQH9L7 with PID 73748 (D:\IT\Projects\Spring-starter\build\classes\java\main started by killa in D:\IT\Projects\Spring-starter)
+2022-09-05 18:42:45.910  INFO 73748 --- [main] com.artem.spring.ApplicationRunner       : The following 1 profile is active: "qa"
+2022-09-05 18:42:46.435  INFO 73748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-05 18:42:46.510  INFO 73748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
+2022-09-05 18:42:47.092  INFO 73748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-05 18:42:47.098  INFO 73748 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-05 18:42:47.098  INFO 73748 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-09-05 18:42:47.266  INFO 73748 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-09-05 18:42:47.276  INFO 73748 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-05 18:42:47.276  INFO 73748 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1320 ms
+2022-09-05 18:42:47.424  INFO 73748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-05 18:42:47.523  INFO 73748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-05 18:42:47.630  INFO 73748 --- [main] liquibase.database                       : Set default schema name to public
+2022-09-05 18:42:47.730  INFO 73748 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2022-09-05 18:42:47.837  INFO 73748 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2022-09-05 18:42:47.888  INFO 73748 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2022-09-05 18:42:47.957  INFO 73748 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-05 18:42:48.005  INFO 73748 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-09-05 18:42:48.118  INFO 73748 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-05 18:42:48.199  INFO 73748 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-09-05 18:42:48.224  INFO 73748 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2022-09-05 18:42:49.058  INFO 73748 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-05 18:42:49.111  INFO 73748 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-05 18:42:49.116  INFO 73748 --- [main] c.artem.spring.config.JpaConfiguration   : Jpa Configuration is enabled
+2022-09-05 18:42:49.120  INFO 73748 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 18:42:49.558  INFO 73748 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 18:42:49.558  INFO 73748 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-05 18:42:49.971  INFO 73748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-05 18:42:49.981  INFO 73748 --- [main] com.artem.spring.ApplicationRunner       : Started ApplicationRunner in 4.554 seconds (JVM running for 5.394)
+2022-09-05 18:43:01.903  INFO 73748 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-05 18:43:01.903  INFO 73748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-05 18:43:01.905  INFO 73748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-09-05 18:43:01.982 ERROR 73748 --- [http-nio-8080-exec-1] c.a.s.h.ControllerExceptionHandler       : Failed to return response
+
+org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'userCreateEditDto' on field 'username': rejected value [petr]; codes [Email.userCreateEditDto.username,Email.username,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userCreateEditDto.username,username]; arguments []; default message [username],[Ljavax.validation.constraints.Pattern$Flag;@7d31f29c,.*]; default message [Please provide correct email format]
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:175) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.64.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.64.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-09-05 18:43:38.443  WARN 73748 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50s816ms655µs800ns).
+2022-09-05 18:43:38.626  INFO 73748 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 18:43:38.626  INFO 73748 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 18:43:38.627  INFO 73748 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-05 18:43:38.627  INFO 73748 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-05 18:43:38.628  INFO 73748 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-05 18:43:38.632  INFO 73748 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
