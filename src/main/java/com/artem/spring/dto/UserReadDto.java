@@ -18,6 +18,8 @@ public class UserReadDto {
 
     String lastname;
 
+    String image;
+
     Role role;
 
     CompanyReadDto company;

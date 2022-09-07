@@ -18,7 +18,8 @@ db:
       timeout: 2
     - size: 3
       timeout: 3
-spring.profiles.active: qa
+      
+spring.profiles.active: qa, local
 
 logging:
   level:
@@ -52,3 +53,4 @@ spring:
         format_sql: true
         hbm2ddl.auto: validate
     open-in-view: false
+
