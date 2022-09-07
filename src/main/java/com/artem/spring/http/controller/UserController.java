@@ -8,7 +8,6 @@ import com.artem.spring.dto.UserFilter;
 import com.artem.spring.dto.UserReadDto;
 import com.artem.spring.service.CompanyService;
 import com.artem.spring.service.UserService;
-import com.artem.spring.validation.group.CreateAction;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
@@ -22,8 +21,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.validation.groups.Default;
 
 @Slf4j
 @Controller
@@ -66,7 +63,7 @@ public class UserController {
 
     @PostMapping
 //    @ResponseStatus(HttpStatus.CREATED)
-    public String create(@Validated({Default.class, CreateAction.class}) UserCreateEditDto user,
+    public String create(@Validated UserCreateEditDto user,
                          BindingResult bindingResult,
                          RedirectAttributes redirectAttributes) {
 
@@ -80,7 +77,7 @@ public class UserController {
 
 //    @PutMapping("/{id}")
     @PostMapping("/{id}/update")
-    public String update(@PathVariable("id") Long id, @Validated({Default.class}) UserCreateEditDto user) {
+    public String update(@PathVariable("id") Long id, @Validated UserCreateEditDto user) {
         return userService.update(id, user)
                 .map(it -> "redirect:/users/{id}")
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));

@@ -24,3 +24,7 @@ build/
 hs_err_pid*
 /.gradle/
 
+/images/
+
+
+*application-local.yml
