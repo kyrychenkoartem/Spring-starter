@@ -53,4 +53,26 @@ spring:
         format_sql: true
         hbm2ddl.auto: validate
     open-in-view: false
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: ${oauth2.google.clientId}
+            clientSecret: ${oauth2.google.clientSecret}
+            redirectUri: ${oauth2.google.redirectUri}
+            scope: ${oauth2.google.scope}
+springdoc:
+  swagger-ui:
+    oauth:
+      client-id: ${oauth2.google.clientId}
+      client-secret: ${oauth2.google.clientSecret}
+      scopes: ${oauth2.google.scope}
+    oauth2-redirect-url: ${swagger.oauth.redirect-utl}
+
+openApiConfig:
+  flows:
+    authorizationCode:
+      authorizationUrl: ${openApiConfiguration.flows.authorizationCode.authorizationUrl}
+      tokenUrl: ${openApiConfiguration.flows.authorizationCode.tokenUrl}
 

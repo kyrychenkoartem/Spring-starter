@@ -5,7 +5,9 @@ import com.artem.spring.database.entity.User;
 import com.artem.spring.database.repository.CompanyRepository;
 import com.artem.spring.dto.UserCreateEditDto;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
+import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.Optional;
@@ -17,6 +19,8 @@ import static java.util.function.Predicate.not;
 public class UserCreateEditMapper implements Mapper<UserCreateEditDto, User> {
 
     private final CompanyRepository companyRepository;
+
+    private final PasswordEncoder passwordEncoder;
 
     @Override
     public User map(UserCreateEditDto fromObject, User toObject) {
@@ -38,6 +42,11 @@ public class UserCreateEditMapper implements Mapper<UserCreateEditDto, User> {
         user.setBirthDate(object.getBirthDate());
         user.setRole(object.getRole());
         user.setCompany(getCompany(object.getCompanyId()));
+
+        Optional.ofNullable(object.getRawPassword())
+                .filter(StringUtils::hasText)
+                .map(passwordEncoder::encode)
+                .ifPresent(user::setPassword);
 
         Optional.ofNullable(object.getImage())
                 .filter(not(MultipartFile::isEmpty))

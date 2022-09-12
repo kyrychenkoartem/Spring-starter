@@ -2,22 +2,23 @@ package com.artem.spring.integration.service;
 
 
 import com.artem.spring.database.entity.Role;
-import com.artem.spring.database.pool.ConnectionPool;
 import com.artem.spring.dto.UserCreateEditDto;
 import com.artem.spring.dto.UserReadDto;
 import com.artem.spring.integration.IntegrationTestBase;
-import com.artem.spring.integration.annotation.IT;
 import com.artem.spring.service.UserService;
 import lombok.RequiredArgsConstructor;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.springframework.mock.web.MockMultipartFile;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
+
+;
 
 
 @RequiredArgsConstructor
@@ -41,15 +42,16 @@ public class UserServiceIT extends IntegrationTestBase {
     }
 
     @Test
-    void create() {
+    void create() throws IOException {
         UserCreateEditDto userDto = new UserCreateEditDto(
                 "test@gmail.com",
+                "testPassword",
                 LocalDate.now(),
                 "Test",
                 "Test",
                 Role.USER,
-                COMPANY_1
-        );
+                COMPANY_1 ,
+                new MockMultipartFile("test.xlsx", new byte[0]));
         UserReadDto actualResult = userService.create(userDto);
         assertEquals(userDto.getUsername(), actualResult.getUsername());
         assertEquals(userDto.getFirstname(), actualResult.getFirstname());
@@ -60,15 +62,16 @@ public class UserServiceIT extends IntegrationTestBase {
     }
 
     @Test
-    void update() {
+    void update() throws IOException {
         UserCreateEditDto userDto = new UserCreateEditDto(
                 "test@gmail.com",
+                "testPassword",
                 LocalDate.now(),
                 "Test",
                 "Test",
                 Role.USER,
-                COMPANY_1
-        );
+                COMPANY_1,
+                new MockMultipartFile("test.xlsx", new byte[0]));
         Optional<UserReadDto> actualResult = userService.update(USER_1, userDto);
         assertTrue(actualResult.isPresent());
         actualResult.ifPresent(user -> {
