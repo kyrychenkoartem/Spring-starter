@@ -2,6 +2,8 @@ package com.artem.spring.dto;
 
 import com.artem.spring.database.entity.Role;
 import com.artem.spring.validation.UserInfo;
+import com.artem.spring.validation.group.CreateAction;
+import com.artem.spring.validation.group.UpdateAction;
 import lombok.Value;
 import lombok.experimental.FieldNameConstants;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -14,11 +16,14 @@ import java.time.LocalDate;
 
 @Value
 @FieldNameConstants
-@UserInfo
+@UserInfo(groups = UpdateAction.class)
 public class UserCreateEditDto {
 
     @Email(message = "Please provide correct email format")
     String username;
+
+    @NotBlank(groups = CreateAction.class)
+    String rawPassword;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     LocalDate birthDate;

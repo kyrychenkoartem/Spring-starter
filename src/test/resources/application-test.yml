@@ -10,3 +10,5 @@ spring:
     properties:
       hibernate:
         hbm2ddl.auto: validate
+image:
+  bucket: image.bucket.test

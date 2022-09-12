@@ -13,11 +13,15 @@ import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -26,7 +30,7 @@ import static com.artem.spring.database.entity.QUser.user;
 @Service
 @RequiredArgsConstructor
 @Transactional(readOnly = true)
-public class UserService {
+public class UserService implements UserDetailsService {
 
     private final UserRepository userRepository;
 
@@ -36,6 +40,8 @@ public class UserService {
 
     private final ImageService imageService;
 
+//    @PostFilter("filterObject.role.name().equals('ADMIN')")
+//    @PostFilter("@companyService.findById(filterObject.company.id()).isPresent()")
     public Page<UserReadDto> findAll(UserFilter userFilter, Pageable pageable) {
         Predicate predicate = QPredicates.builder()
                 .add(userFilter.firstname(), user.firstname::containsIgnoreCase)
@@ -52,6 +58,9 @@ public class UserService {
              .toList();
     }
 
+
+//    @PreAuthorize("hasAuthority('ADMIN')")
+////    @PostAuthorize("returnObject")
     public Optional<UserReadDto> findById(Long id) {
         return userRepository.findById(id)
                 .map(userReadMapper::map);
@@ -104,5 +113,16 @@ public class UserService {
                     return true;
                 })
                 .orElse(false);
+    }
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        return userRepository.findByUsername(username)
+                .map(user -> new org.springframework.security.core.userdetails.User(
+                        user.getUsername(),
+                        user.getPassword(),
+                        Collections.singleton(user.getRole())
+                ))
+                .orElseThrow(() -> new UsernameNotFoundException("Failed to retrieve User:" + username));
     }
 }
