@@ -1,256 +1,47 @@
-2022-09-14 20:05:11.942  INFO 4316 --- [main] com.artem.spring.ApplicationRunner       : Starting ApplicationRunner using Java 17.0.3 on LAPTOP-FTAQH9L7 with PID 4316 (D:\IT\Projects\Spring-starter\build\classes\java\main started by killa in D:\IT\Projects\Spring-starter)
-2022-09-14 20:05:11.950  INFO 4316 --- [main] com.artem.spring.ApplicationRunner       : The following 2 profiles are active: "qa", "local"
-2022-09-14 20:05:12.563  INFO 4316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-09-14 20:05:12.625  INFO 4316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
-2022-09-14 20:05:13.432  INFO 4316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-09-14 20:05:13.440  INFO 4316 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-09-14 20:05:13.441  INFO 4316 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-09-14 20:05:13.660  INFO 4316 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2022-09-14 20:05:13.668  INFO 4316 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-09-14 20:05:13.668  INFO 4316 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1656 ms
-2022-09-14 20:05:13.860  INFO 4316 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-09-14 20:05:13.995  INFO 4316 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-09-14 20:05:14.111  INFO 4316 --- [main] liquibase.database                       : Set default schema name to public
-2022-09-14 20:05:14.206  INFO 4316 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
-2022-09-14 20:05:14.327  INFO 4316 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
-2022-09-14 20:05:14.381  INFO 4316 --- [main] liquibase.lockservice                    : Successfully released change log lock
-2022-09-14 20:05:14.445  INFO 4316 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-09-14 20:05:14.491  INFO 4316 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
-2022-09-14 20:05:14.655  INFO 4316 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-09-14 20:05:14.751  INFO 4316 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-09-14 20:05:14.777  INFO 4316 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
-2022-09-14 20:05:15.721  INFO 4316 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-09-14 20:05:15.812  INFO 4316 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-09-14 20:05:15.828  INFO 4316 --- [main] c.artem.spring.config.JpaConfiguration   : Jpa Configuration is enabled
-2022-09-14 20:05:16.523  INFO 4316 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
-2022-09-14 20:05:16.555  INFO 4316 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
-2022-09-14 20:05:16.556  INFO 4316 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
-2022-09-14 20:05:17.454  INFO 4316 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7c1a5092, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24663d05, org.springframework.security.web.context.SecurityContextPersistenceFilter@520b547c, org.springframework.security.web.header.HeaderWriterFilter@30c0993e, org.springframework.security.web.csrf.CsrfFilter@591bff1d, org.springframework.security.web.authentication.logout.LogoutFilter@461e0652, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@7dbf92aa, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@122557f8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5a318745, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3818609f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a339bc1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59c530b5, org.springframework.security.web.session.SessionManagementFilter@67398bad, org.springframework.security.web.access.ExceptionTranslationFilter@65dff28b, org.springframework.security.web.access.intercept.AuthorizationFilter@18f6ee8d]
-2022-09-14 20:05:17.523  INFO 4316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-09-14 20:05:17.533  INFO 4316 --- [main] com.artem.spring.ApplicationRunner       : Started ApplicationRunner in 6.249 seconds (JVM running for 7.938)
-2022-09-14 20:05:23.229  INFO 4316 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-09-14 20:05:23.229  INFO 4316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-09-14 20:05:23.230  INFO 4316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2022-09-14 20:06:00.911  WARN 4316 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s811ms109µs800ns).
-2022-09-14 20:13:07.117  WARN 4316 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m6s206ms141µs200ns).
-2022-09-14 20:13:07.121  INFO 4316 --- [http-nio-8080-exec-8] com.artem.spring.aop.FirstAspect         : Invoked findById method
-2022-09-14 20:13:34.393  INFO 20600 --- [main] com.artem.spring.ApplicationRunner       : Starting ApplicationRunner using Java 17.0.3 on LAPTOP-FTAQH9L7 with PID 20600 (D:\IT\Projects\Spring-starter\build\classes\java\main started by killa in D:\IT\Projects\Spring-starter)
-2022-09-14 20:13:34.397  INFO 20600 --- [main] com.artem.spring.ApplicationRunner       : The following 2 profiles are active: "qa", "local"
-2022-09-14 20:13:35.074  INFO 20600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-09-14 20:13:35.148  INFO 20600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
-2022-09-14 20:13:35.971  INFO 20600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-09-14 20:13:35.977  INFO 20600 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-09-14 20:13:35.977  INFO 20600 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-09-14 20:13:36.169  INFO 20600 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2022-09-14 20:13:36.177  INFO 20600 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-09-14 20:13:36.178  INFO 20600 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1725 ms
-2022-09-14 20:13:36.357  INFO 20600 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-09-14 20:13:36.456  INFO 20600 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-09-14 20:13:36.554  INFO 20600 --- [main] liquibase.database                       : Set default schema name to public
-2022-09-14 20:13:36.652  INFO 20600 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
-2022-09-14 20:13:36.748  INFO 20600 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
-2022-09-14 20:13:36.805  INFO 20600 --- [main] liquibase.lockservice                    : Successfully released change log lock
-2022-09-14 20:13:36.868  INFO 20600 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-09-14 20:13:36.917  INFO 20600 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
-2022-09-14 20:13:37.026  INFO 20600 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-09-14 20:13:37.108  INFO 20600 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-09-14 20:13:37.141  INFO 20600 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
-2022-09-14 20:13:38.024  INFO 20600 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-09-14 20:13:38.081  INFO 20600 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-09-14 20:13:38.093  INFO 20600 --- [main] c.artem.spring.config.JpaConfiguration   : Jpa Configuration is enabled
-2022-09-14 20:13:38.798  INFO 20600 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
-2022-09-14 20:13:38.825  INFO 20600 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
-2022-09-14 20:13:38.826  INFO 20600 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
-2022-09-14 20:13:39.810  INFO 20600 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@30f929ff, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49d4a2cf, org.springframework.security.web.context.SecurityContextPersistenceFilter@f5b08d4, org.springframework.security.web.header.HeaderWriterFilter@49a6503f, org.springframework.security.web.csrf.CsrfFilter@5f709b99, org.springframework.security.web.authentication.logout.LogoutFilter@5dd3841, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@6508e82, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@731819a0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@618c387d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b886bd3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d9e511c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@fed510f, org.springframework.security.web.session.SessionManagementFilter@30f39d9d, org.springframework.security.web.access.ExceptionTranslationFilter@268215b3, org.springframework.security.web.access.intercept.AuthorizationFilter@7d39c9c]
-2022-09-14 20:13:39.876  INFO 20600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-09-14 20:13:39.886  INFO 20600 --- [main] com.artem.spring.ApplicationRunner       : Started ApplicationRunner in 6.036 seconds (JVM running for 7.004)
-2022-09-14 20:13:46.144  INFO 20600 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-09-14 20:13:46.144  INFO 20600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-09-14 20:13:46.145  INFO 20600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-09-14 20:14:56.384  WARN 20600 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s813ms624µs100ns).
-2022-09-14 20:14:56.387  INFO 20600 --- [http-nio-8080-exec-6] com.artem.spring.aop.FirstAspect         : Invoked findById method in class com.artem.spring.service.UserService@4707d60a, with id 4
-2022-09-14 20:20:18.358  INFO 20600 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
-2022-09-14 20:20:18.359  INFO 20600 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
-2022-09-14 20:20:18.359  INFO 20600 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
-2022-09-14 20:20:18.360  INFO 20600 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-09-14 20:20:18.361  INFO 20600 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-09-14 20:20:18.364  INFO 20600 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-09-14 20:30:33.480  INFO 21588 --- [main] com.artem.spring.ApplicationRunner       : Starting ApplicationRunner using Java 17.0.3 on LAPTOP-FTAQH9L7 with PID 21588 (D:\IT\Projects\Spring-starter\build\classes\java\main started by killa in D:\IT\Projects\Spring-starter)
-2022-09-14 20:30:33.483  INFO 21588 --- [main] com.artem.spring.ApplicationRunner       : The following 2 profiles are active: "qa", "local"
-2022-09-14 20:30:34.096  INFO 21588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-09-14 20:30:34.170  INFO 21588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 2 JPA repository interfaces.
-2022-09-14 20:30:35.078  INFO 21588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-09-14 20:30:35.084  INFO 21588 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-09-14 20:30:35.084  INFO 21588 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-09-14 20:30:35.257  INFO 21588 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2022-09-14 20:30:35.266  INFO 21588 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-09-14 20:30:35.267  INFO 21588 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1727 ms
-2022-09-14 20:30:35.425  INFO 21588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-09-14 20:30:35.521  INFO 21588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-09-14 20:30:35.603  INFO 21588 --- [main] liquibase.database                       : Set default schema name to public
-2022-09-14 20:30:35.690  INFO 21588 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
-2022-09-14 20:30:35.782  INFO 21588 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
-2022-09-14 20:30:35.849  INFO 21588 --- [main] liquibase.lockservice                    : Successfully released change log lock
-2022-09-14 20:30:35.928  INFO 21588 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-09-14 20:30:35.961  INFO 21588 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
-2022-09-14 20:30:36.045  INFO 21588 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-09-14 20:30:36.114  INFO 21588 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-09-14 20:30:36.137  INFO 21588 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
-2022-09-14 20:30:36.924  INFO 21588 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-09-14 20:30:36.984  INFO 21588 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-09-14 20:30:36.998  INFO 21588 --- [main] c.artem.spring.config.JpaConfiguration   : Jpa Configuration is enabled
-2022-09-14 20:30:37.685  INFO 21588 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
-2022-09-14 20:30:37.716  INFO 21588 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
-2022-09-14 20:30:37.717  INFO 21588 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
-2022-09-14 20:30:38.690  INFO 21588 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@73193fe0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@295d1a45, org.springframework.security.web.context.SecurityContextPersistenceFilter@250c5892, org.springframework.security.web.header.HeaderWriterFilter@2c59b9f4, org.springframework.security.web.csrf.CsrfFilter@54ebacdc, org.springframework.security.web.authentication.logout.LogoutFilter@246ee6d8, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@292d1705, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@7c9a0166, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@205c5cd0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54c76c23, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1caf77f6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@53e7cc08, org.springframework.security.web.session.SessionManagementFilter@731819a0, org.springframework.security.web.access.ExceptionTranslationFilter@478d1193, org.springframework.security.web.access.intercept.AuthorizationFilter@8fa4647]
-2022-09-14 20:30:38.777  INFO 21588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-09-14 20:30:38.787  INFO 21588 --- [main] com.artem.spring.ApplicationRunner       : Started ApplicationRunner in 5.755 seconds (JVM running for 6.366)
-2022-09-14 20:30:52.423  INFO 21588 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-09-14 20:30:52.424  INFO 21588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-09-14 20:30:52.424  INFO 21588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2022-09-14 20:30:58.263  INFO 21588 --- [http-nio-8080-exec-4] com.artem.spring.aop.FirstAspect         : Invoked findById method in class com.artem.spring.service.UserService@8788194, with id 4
-2022-09-14 20:30:58.272  INFO 21588 --- [http-nio-8080-exec-4] com.artem.spring.aop.FirstAspect         : after returning - invoked findById method in class com.artem.spring.service.UserService@8788194, result Optional[UserReadDto(id=4, username=vlad@gmail.com, birthDate=1984-03-14, firstname=Vlad, lastname=Vladikov, image=null, role=USER, company=CompanyReadDto[id=3, name=Amazon])]
-2022-09-14 20:30:58.276  INFO 21588 --- [http-nio-8080-exec-4] com.artem.spring.aop.FirstAspect         : after finally - invoked findById method in class com.artem.spring.service.UserService@8788194
-2022-09-14 20:32:47.704  INFO 21588 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
-2022-09-14 20:32:47.704  INFO 21588 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
-2022-09-14 20:32:47.704  INFO 21588 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
-2022-09-14 20:32:47.705  INFO 21588 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-09-14 20:32:47.706  INFO 21588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-09-14 20:32:47.714  INFO 21588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-09-14 20:32:53.015  INFO 17836 --- [main] com.artem.spring.ApplicationRunner       : Starting ApplicationRunner using Java 17.0.3 on LAPTOP-FTAQH9L7 with PID 17836 (D:\IT\Projects\Spring-starter\build\classes\java\main started by killa in D:\IT\Projects\Spring-starter)
-2022-09-14 20:32:53.018  INFO 17836 --- [main] com.artem.spring.ApplicationRunner       : The following 2 profiles are active: "qa", "local"
-2022-09-14 20:32:53.680  INFO 17836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-09-14 20:32:53.757  INFO 17836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
-2022-09-14 20:32:54.675  INFO 17836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-09-14 20:32:54.688  INFO 17836 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-09-14 20:32:54.688  INFO 17836 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-09-14 20:32:54.900  INFO 17836 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2022-09-14 20:32:54.909  INFO 17836 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-09-14 20:32:54.909  INFO 17836 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1837 ms
-2022-09-14 20:32:55.112  INFO 17836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-09-14 20:32:55.224  INFO 17836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-09-14 20:32:55.316  INFO 17836 --- [main] liquibase.database                       : Set default schema name to public
-2022-09-14 20:32:55.413  INFO 17836 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
-2022-09-14 20:32:55.521  INFO 17836 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
-2022-09-14 20:32:55.580  INFO 17836 --- [main] liquibase.lockservice                    : Successfully released change log lock
-2022-09-14 20:32:55.649  INFO 17836 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-09-14 20:32:55.687  INFO 17836 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
-2022-09-14 20:32:55.803  INFO 17836 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-09-14 20:32:55.887  INFO 17836 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-09-14 20:32:55.911  INFO 17836 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
-2022-09-14 20:32:56.788  INFO 17836 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-09-14 20:32:56.845  INFO 17836 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-09-14 20:32:56.858  INFO 17836 --- [main] c.artem.spring.config.JpaConfiguration   : Jpa Configuration is enabled
-2022-09-14 20:32:57.620  INFO 17836 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
-2022-09-14 20:32:57.664  INFO 17836 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
-2022-09-14 20:32:57.665  INFO 17836 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
-2022-09-14 20:32:58.695  INFO 17836 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@453ff774, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ea82cef, org.springframework.security.web.context.SecurityContextPersistenceFilter@16bba8ae, org.springframework.security.web.header.HeaderWriterFilter@246ee6d8, org.springframework.security.web.csrf.CsrfFilter@48f6f272, org.springframework.security.web.authentication.logout.LogoutFilter@6aa16117, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@139e291e, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@173a86ad, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3c832820, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f2312f3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75b05ec7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7fda0e30, org.springframework.security.web.session.SessionManagementFilter@202d83b9, org.springframework.security.web.access.ExceptionTranslationFilter@330f3046, org.springframework.security.web.access.intercept.AuthorizationFilter@3e9053b3]
-2022-09-14 20:32:58.782  INFO 17836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-09-14 20:32:58.791  INFO 17836 --- [main] com.artem.spring.ApplicationRunner       : Started ApplicationRunner in 6.367 seconds (JVM running for 7.138)
-2022-09-14 20:33:11.608  INFO 17836 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-09-14 20:33:11.608  INFO 17836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-09-14 20:33:11.609  INFO 17836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-09-14 20:33:15.712  INFO 17836 --- [http-nio-8080-exec-4] com.artem.spring.aop.FirstAspect         : before - invoked findById method in class com.artem.spring.service.UserService@6b9ce7a3, with id 4
-2022-09-14 20:33:15.734  INFO 17836 --- [http-nio-8080-exec-4] com.artem.spring.aop.FirstAspect         : after returning - invoked findById method in class com.artem.spring.service.UserService@6b9ce7a3, result Optional[UserReadDto(id=4, username=vlad@gmail.com, birthDate=1984-03-14, firstname=Vlad, lastname=Vladikov, image=null, role=USER, company=CompanyReadDto[id=3, name=Amazon])]
-2022-09-14 20:33:43.315  WARN 17836 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s975ms775µs600ns).
-2022-09-14 20:33:43.316  INFO 17836 --- [http-nio-8080-exec-4] com.artem.spring.aop.FirstAspect         : after finally - invoked findById method in class com.artem.spring.service.UserService@6b9ce7a3
-2022-09-14 20:33:56.113  INFO 17836 --- [http-nio-8080-exec-8] com.artem.spring.aop.FirstAspect         : before - invoked findById method in class com.artem.spring.service.UserService@6b9ce7a3, with id 4
-2022-09-14 20:33:56.121  INFO 17836 --- [http-nio-8080-exec-8] com.artem.spring.aop.FirstAspect         : after returning - invoked findById method in class com.artem.spring.service.UserService@6b9ce7a3, result Optional[UserReadDto(id=4, username=vlad@gmail.com, birthDate=1984-03-14, firstname=Vlad, lastname=Vladikov, image=null, role=USER, company=CompanyReadDto[id=3, name=Amazon])]
-2022-09-14 20:35:49.760  WARN 17836 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m6s445ms941µs100ns).
-2022-09-14 20:35:49.762  INFO 17836 --- [http-nio-8080-exec-8] com.artem.spring.aop.FirstAspect         : after finally - invoked findById method in class com.artem.spring.service.UserService@6b9ce7a3
-2022-09-14 20:35:49.842  INFO 17836 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
-2022-09-14 20:35:49.842  INFO 17836 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
-2022-09-14 20:35:49.842  INFO 17836 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
-2022-09-14 20:35:49.844  INFO 17836 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-09-14 20:35:49.845  INFO 17836 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-09-14 20:35:49.850  INFO 17836 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-09-14 20:48:19.193  INFO 17108 --- [main] com.artem.spring.ApplicationRunner       : Starting ApplicationRunner using Java 17.0.3 on LAPTOP-FTAQH9L7 with PID 17108 (D:\IT\Projects\Spring-starter\build\classes\java\main started by killa in D:\IT\Projects\Spring-starter)
-2022-09-14 20:48:19.195  INFO 17108 --- [main] com.artem.spring.ApplicationRunner       : The following 2 profiles are active: "qa", "local"
-2022-09-14 20:48:19.803  INFO 17108 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-09-14 20:48:19.876  INFO 17108 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
-2022-09-14 20:48:20.693  INFO 17108 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-09-14 20:48:20.700  INFO 17108 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-09-14 20:48:20.700  INFO 17108 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-09-14 20:48:20.898  INFO 17108 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2022-09-14 20:48:20.907  INFO 17108 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-09-14 20:48:20.907  INFO 17108 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1672 ms
-2022-09-14 20:48:21.059  INFO 17108 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-09-14 20:48:21.158  INFO 17108 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-09-14 20:48:21.238  INFO 17108 --- [main] liquibase.database                       : Set default schema name to public
-2022-09-14 20:48:21.310  INFO 17108 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
-2022-09-14 20:48:21.393  INFO 17108 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
-2022-09-14 20:48:21.455  INFO 17108 --- [main] liquibase.lockservice                    : Successfully released change log lock
-2022-09-14 20:48:21.523  INFO 17108 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-09-14 20:48:21.555  INFO 17108 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
-2022-09-14 20:48:21.643  INFO 17108 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-09-14 20:48:21.710  INFO 17108 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-09-14 20:48:21.733  INFO 17108 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
-2022-09-14 20:48:22.494  INFO 17108 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-09-14 20:48:22.553  INFO 17108 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-09-14 20:48:22.565  INFO 17108 --- [main] c.artem.spring.config.JpaConfiguration   : Jpa Configuration is enabled
-2022-09-14 20:48:23.289  INFO 17108 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
-2022-09-14 20:48:23.317  INFO 17108 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
-2022-09-14 20:48:23.318  INFO 17108 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
-2022-09-14 20:48:24.288  INFO 17108 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6212dc7d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64bcf689, org.springframework.security.web.context.SecurityContextPersistenceFilter@401b7109, org.springframework.security.web.header.HeaderWriterFilter@fed510f, org.springframework.security.web.csrf.CsrfFilter@cf9223f, org.springframework.security.web.authentication.logout.LogoutFilter@18791f7b, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@4b45016d, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@5dbd7f00, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@75b05ec7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5135b459, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e3934db, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2bf3ec4a, org.springframework.security.web.session.SessionManagementFilter@4a35aed6, org.springframework.security.web.access.ExceptionTranslationFilter@238fcafa, org.springframework.security.web.access.intercept.AuthorizationFilter@65a42136]
-2022-09-14 20:48:24.352  INFO 17108 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-09-14 20:48:24.361  INFO 17108 --- [main] com.artem.spring.ApplicationRunner       : Started ApplicationRunner in 5.602 seconds (JVM running for 6.297)
-2022-09-14 20:48:30.006  INFO 17108 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-09-14 20:48:30.006  INFO 17108 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-09-14 20:48:30.007  INFO 17108 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2022-09-14 20:48:35.136  INFO 17108 --- [http-nio-8080-exec-8] com.artem.spring.aop.FirstAspect         : AROUND before - invoked findById method in class com.artem.spring.service.UserService@6eaa8abf, with id 4
-2022-09-14 20:48:35.137  INFO 17108 --- [http-nio-8080-exec-8] com.artem.spring.aop.FirstAspect         : before - invoked findById method in class com.artem.spring.service.UserService@6eaa8abf, with id 4
-2022-09-14 20:48:35.148  INFO 17108 --- [http-nio-8080-exec-8] com.artem.spring.aop.FirstAspect         : after returning - invoked findById method in class com.artem.spring.service.UserService@6eaa8abf, result Optional[UserReadDto(id=4, username=vlad@gmail.com, birthDate=1984-03-14, firstname=Vlad, lastname=Vladikov, image=null, role=USER, company=CompanyReadDto[id=3, name=Amazon])]
-2022-09-14 20:48:35.154  INFO 17108 --- [http-nio-8080-exec-8] com.artem.spring.aop.FirstAspect         : after finally - invoked findById method in class com.artem.spring.service.UserService@6eaa8abf
-2022-09-14 20:48:35.154  INFO 17108 --- [http-nio-8080-exec-8] com.artem.spring.aop.FirstAspect         : AROUND returning - invoked findById method in class com.artem.spring.service.UserService@6eaa8abf, result Optional[UserReadDto(id=4, username=vlad@gmail.com, birthDate=1984-03-14, firstname=Vlad, lastname=Vladikov, image=null, role=USER, company=CompanyReadDto[id=3, name=Amazon])]
-2022-09-14 20:48:35.154  INFO 17108 --- [http-nio-8080-exec-8] com.artem.spring.aop.FirstAspect         : AROUND finally - invoked findById method in class com.artem.spring.service.UserService@6eaa8abf
-2022-09-14 21:00:32.426  INFO 17108 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
-2022-09-14 21:00:32.427  INFO 17108 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
-2022-09-14 21:00:32.427  INFO 17108 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
-2022-09-14 21:00:32.428  INFO 17108 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-09-14 21:00:32.430  INFO 17108 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-09-14 21:00:32.433  INFO 17108 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-09-14 21:00:37.306  INFO 8876 --- [main] com.artem.spring.ApplicationRunner       : Starting ApplicationRunner using Java 17.0.3 on LAPTOP-FTAQH9L7 with PID 8876 (D:\IT\Projects\Spring-starter\build\classes\java\main started by killa in D:\IT\Projects\Spring-starter)
-2022-09-14 21:00:37.309  INFO 8876 --- [main] com.artem.spring.ApplicationRunner       : The following 2 profiles are active: "qa", "local"
-2022-09-14 21:00:37.905  INFO 8876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-09-14 21:00:37.979  INFO 8876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
-2022-09-14 21:00:38.844  INFO 8876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-09-14 21:00:38.850  INFO 8876 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-09-14 21:00:38.850  INFO 8876 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-09-14 21:00:39.021  INFO 8876 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2022-09-14 21:00:39.027  INFO 8876 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-09-14 21:00:39.027  INFO 8876 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1670 ms
-2022-09-14 21:00:39.177  INFO 8876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-09-14 21:00:39.274  INFO 8876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-09-14 21:00:39.353  INFO 8876 --- [main] liquibase.database                       : Set default schema name to public
-2022-09-14 21:00:39.428  INFO 8876 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
-2022-09-14 21:00:39.512  INFO 8876 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
-2022-09-14 21:00:39.572  INFO 8876 --- [main] liquibase.lockservice                    : Successfully released change log lock
-2022-09-14 21:00:39.652  INFO 8876 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-09-14 21:00:39.692  INFO 8876 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
-2022-09-14 21:00:39.788  INFO 8876 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-09-14 21:00:39.859  INFO 8876 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-09-14 21:00:39.881  INFO 8876 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
-2022-09-14 21:00:40.654  INFO 8876 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-09-14 21:00:40.718  INFO 8876 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-09-14 21:00:40.737  INFO 8876 --- [main] c.artem.spring.config.JpaConfiguration   : Jpa Configuration is enabled
-2022-09-14 21:00:41.459  INFO 8876 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
-2022-09-14 21:00:41.487  INFO 8876 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
-2022-09-14 21:00:41.488  INFO 8876 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
-2022-09-14 21:00:42.492  INFO 8876 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@292d1705, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70796b21, org.springframework.security.web.context.SecurityContextPersistenceFilter@6fab0d15, org.springframework.security.web.header.HeaderWriterFilter@346d441a, org.springframework.security.web.csrf.CsrfFilter@23d16a81, org.springframework.security.web.authentication.logout.LogoutFilter@858bf8c, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@4d2068ea, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@3b191676, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@246ee6d8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21d85933, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@fed510f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4263fbe8, org.springframework.security.web.session.SessionManagementFilter@cf9223f, org.springframework.security.web.access.ExceptionTranslationFilter@4d92e9da, org.springframework.security.web.access.intercept.AuthorizationFilter@5e3934db]
-2022-09-14 21:00:42.563  INFO 8876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-09-14 21:00:42.573  INFO 8876 --- [main] com.artem.spring.ApplicationRunner       : Started ApplicationRunner in 5.735 seconds (JVM running for 6.269)
-2022-09-14 21:00:53.289  INFO 8876 --- [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-09-14 21:00:53.289  INFO 8876 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-09-14 21:00:53.290  INFO 8876 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-09-14 21:00:56.607  INFO 8876 --- [http-nio-8080-exec-4] com.artem.spring.aop.FirstAspect         : before - invoked findById method in class com.artem.spring.service.UserService@26864891, with id 4
-2022-09-14 21:00:56.608  INFO 8876 --- [http-nio-8080-exec-4] com.artem.spring.aop.SecondAspect        : AROUND before - invoked findById method in class com.artem.spring.service.UserService@26864891, with id 4
-2022-09-14 21:00:56.654  INFO 8876 --- [http-nio-8080-exec-4] com.artem.spring.aop.SecondAspect        : AROUND returning - invoked findById method in class com.artem.spring.service.UserService@26864891, result Optional[UserReadDto(id=4, username=vlad@gmail.com, birthDate=1984-03-14, firstname=Vlad, lastname=Vladikov, image=null, role=USER, company=CompanyReadDto[id=3, name=Amazon])]
-2022-09-14 21:00:56.658  INFO 8876 --- [http-nio-8080-exec-4] com.artem.spring.aop.SecondAspect        : AROUND finally - invoked findById method in class com.artem.spring.service.UserService@26864891
-2022-09-14 21:00:56.659  INFO 8876 --- [http-nio-8080-exec-4] com.artem.spring.aop.FirstAspect         : after returning - invoked findById method in class com.artem.spring.service.UserService@26864891, result Optional[UserReadDto(id=4, username=vlad@gmail.com, birthDate=1984-03-14, firstname=Vlad, lastname=Vladikov, image=null, role=USER, company=CompanyReadDto[id=3, name=Amazon])]
-2022-09-14 21:00:56.659  INFO 8876 --- [http-nio-8080-exec-4] com.artem.spring.aop.FirstAspect         : after finally - invoked findById method in class com.artem.spring.service.UserService@26864891
-2022-09-14 21:02:05.459  INFO 8876 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
-2022-09-14 21:02:05.460  INFO 8876 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
-2022-09-14 21:02:05.460  INFO 8876 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
-2022-09-14 21:02:05.461  INFO 8876 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-09-14 21:02:05.462  INFO 8876 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-09-14 21:02:05.467  INFO 8876 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-15 00:00:02.217  INFO 3876 --- [main] com.artem.spring.ApplicationRunner       : Starting ApplicationRunner using Java 17.0.3 on LAPTOP-FTAQH9L7 with PID 3876 (D:\IT\Projects\Spring-starter\build\classes\java\main started by killa in D:\IT\Projects\Spring-starter)
+2022-09-15 00:00:02.224  INFO 3876 --- [main] com.artem.spring.ApplicationRunner       : The following 2 profiles are active: "qa", "local"
+2022-09-15 00:00:02.941  INFO 3876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-15 00:00:03.031  INFO 3876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 2 JPA repository interfaces.
+2022-09-15 00:00:04.238  INFO 3876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-15 00:00:04.246  INFO 3876 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-15 00:00:04.246  INFO 3876 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-09-15 00:00:04.500  INFO 3876 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-09-15 00:00:04.508  INFO 3876 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-15 00:00:04.508  INFO 3876 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2228 ms
+2022-09-15 00:00:04.673  INFO 3876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-15 00:00:04.797  INFO 3876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-15 00:00:04.915  INFO 3876 --- [main] liquibase.database                       : Set default schema name to public
+2022-09-15 00:00:05.032  INFO 3876 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2022-09-15 00:00:05.165  INFO 3876 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2022-09-15 00:00:05.213  INFO 3876 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2022-09-15 00:00:05.290  INFO 3876 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-15 00:00:05.327  INFO 3876 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-09-15 00:00:05.430  INFO 3876 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-15 00:00:05.496  INFO 3876 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-09-15 00:00:05.523  INFO 3876 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2022-09-15 00:00:06.317  INFO 3876 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-15 00:00:06.385  INFO 3876 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-15 00:00:06.398  INFO 3876 --- [main] c.artem.spring.config.JpaConfiguration   : Jpa Configuration is enabled
+2022-09-15 00:00:07.087  INFO 3876 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-15 00:00:07.115  INFO 3876 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-15 00:00:07.116  INFO 3876 --- [main] c.a.spring.database.pool.ConnectionPool  : Init connection pool
+2022-09-15 00:00:07.829  INFO 3876 --- [main] c.a.l.config.LoggingAutoConfiguration    : LoggingAutoConfiguration initialized
+2022-09-15 00:00:07.833  INFO 3876 --- [main] c.a.logging.config.LoggingProperties     : Logging properties initialized: LoggingProperties(enabled=true, level=INFO)
+2022-09-15 00:00:08.102  INFO 3876 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4e0dec0c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3dd4f91d, org.springframework.security.web.context.SecurityContextPersistenceFilter@199dee18, org.springframework.security.web.header.HeaderWriterFilter@34b63def, org.springframework.security.web.csrf.CsrfFilter@45bb5862, org.springframework.security.web.authentication.logout.LogoutFilter@10bf2726, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@57352624, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@5f2312f3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@312ddc51, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c59b9f4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@250c5892, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a65ce06, org.springframework.security.web.session.SessionManagementFilter@67d4e8f7, org.springframework.security.web.access.ExceptionTranslationFilter@7d39c9c, org.springframework.security.web.access.intercept.AuthorizationFilter@3a770af8]
+2022-09-15 00:00:08.169  INFO 3876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-15 00:00:08.178  INFO 3876 --- [main] com.artem.spring.ApplicationRunner       : Started ApplicationRunner in 6.515 seconds (JVM running for 7.215)
+2022-09-15 00:00:37.706  INFO 3876 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-15 00:00:37.706  INFO 3876 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-15 00:00:37.707  INFO 3876 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-09-15 00:00:42.025  INFO 3876 --- [http-nio-8080-exec-5] com.artem.logging.aop.FirstAspect        : before - invoked findById method in class com.artem.spring.service.UserService@76dc9569, with id 4
+2022-09-15 00:00:42.025  INFO 3876 --- [http-nio-8080-exec-5] com.artem.logging.aop.SecondAspect       : AROUND before - invoked findById method in class com.artem.spring.service.UserService@76dc9569, with id 4
+2022-09-15 00:00:42.034  INFO 3876 --- [http-nio-8080-exec-5] com.artem.logging.aop.SecondAspect       : AROUND returning - invoked findById method in class com.artem.spring.service.UserService@76dc9569, result Optional[UserReadDto(id=4, username=vlad@gmail.com, birthDate=1984-03-14, firstname=Vlad, lastname=Vladikov, image=null, role=USER, company=CompanyReadDto[id=3, name=Amazon])]
+2022-09-15 00:00:42.038  INFO 3876 --- [http-nio-8080-exec-5] com.artem.logging.aop.SecondAspect       : AROUND finally - invoked findById method in class com.artem.spring.service.UserService@76dc9569
+2022-09-15 00:00:42.038  INFO 3876 --- [http-nio-8080-exec-5] com.artem.logging.aop.FirstAspect        : after returning - invoked findById method in class com.artem.spring.service.UserService@76dc9569, result Optional[UserReadDto(id=4, username=vlad@gmail.com, birthDate=1984-03-14, firstname=Vlad, lastname=Vladikov, image=null, role=USER, company=CompanyReadDto[id=3, name=Amazon])]
+2022-09-15 00:00:42.038  INFO 3876 --- [http-nio-8080-exec-5] com.artem.logging.aop.FirstAspect        : after finally - invoked findById method in class com.artem.spring.service.UserService@76dc9569
+2022-09-15 00:01:37.213  INFO 3876 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-15 00:01:37.214  INFO 3876 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-15 00:01:37.214  INFO 3876 --- [SpringApplicationShutdownHook] c.a.spring.database.pool.ConnectionPool  : Clean connection pool
+2022-09-15 00:01:37.215  INFO 3876 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-15 00:01:37.216  INFO 3876 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-15 00:01:37.219  INFO 3876 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
