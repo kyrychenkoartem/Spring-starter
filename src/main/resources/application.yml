@@ -80,3 +80,9 @@ openApiConfig:
     authorizationCode:
       authorizationUrl: ${openApiConfiguration.flows.authorizationCode.authorizationUrl}
       tokenUrl: ${openApiConfiguration.flows.authorizationCode.tokenUrl}
+
+app:
+  common:
+    logging:
+      enabled: true
+      level: INFO

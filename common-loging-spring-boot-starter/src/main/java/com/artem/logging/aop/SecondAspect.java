@@ -1,19 +1,15 @@
-package com.artem.spring.aop;
+package com.artem.logging.aop;
 
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.springframework.core.annotation.Order;
-import org.springframework.stereotype.Component;
 
 @Aspect
-@Component
 @Slf4j
-@Order(2)
 public class SecondAspect {
 
-    @Around(value = "com.artem.spring.aop.FirstAspect.anyFindByIdServiceMethod()" +
+    @Around(value = "com.artem.logging.aop.FirstAspect.anyFindByIdServiceMethod()" +
             "&& args(id)" +
             "&& target(service)", argNames = "joinPoint,id,service")
     public Object addLoggingAround(ProceedingJoinPoint joinPoint, Object id, Object service) throws Throwable {
